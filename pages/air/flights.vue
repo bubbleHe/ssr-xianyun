@@ -47,6 +47,21 @@ import FlightsFilters from "@/components/air/flightsFilters.vue"
 import FlightsAside from "@/components/air/flightsAside.vue"
 
 export default {
+    mounted(){
+    this.$axios({
+        url:'/posts/comments',
+        params:{
+            post:this.post,
+            _sort:this._sort,
+            _limit:this._limit,
+            _start:this._start
+        }
+    }).then(res=>{
+        console.log(res)
+        this.commentlist=res.data.data
+        console.log(this.commentlist)
+    })
+},
     data(){
         return {
             flightsData: {
