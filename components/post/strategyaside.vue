@@ -1,12 +1,15 @@
 <template>
   <div class="strategyaside_content">
     <h2>相关攻略</h2>
-    <el-row
+    <!-- <nuxt-link
+    > -->
+    <el-row 
+    v-for="(item,index) in wenzhangdata"
+      :key="index"
       class="aside_content"
       type="flex"
       justify="space-between"
-      v-for="(item,index) in wenzhangdata"
-      :key="index"
+      
     >
       <el-col>
         <div class="img">
@@ -18,6 +21,7 @@
         <span>{{item.cityName}} 阅读:{{item.watch}}</span>
       </el-col>
     </el-row>
+    <!-- </nuxt-link> -->
   </div>
 </template>
 

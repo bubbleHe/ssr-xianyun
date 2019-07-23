@@ -56,7 +56,7 @@ export default {
   methods: {
         handlestrategy() {
           this.$router.push({
-            path: "/post/strategy"
+            path: "/post/detail"
           });
         }
       }
