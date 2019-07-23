@@ -1,15 +1,26 @@
 <template>
+<<<<<<< HEAD
+    <div style="margin: 0 auto; height:1000px" >
+    </div>
+=======
   <div style="padding:50px;">
     <h1 @click="handlestrategy">组件递归</h1>
 
     <!-- <Item :data="list" /> -->
   </div>
+>>>>>>> 099b232d4a81f28a6f931c719e48380dcbbf7dc2
 </template>
 
 <script>
 import Item from "@/components/post/item";
 
 export default {
+<<<<<<< HEAD
+    components: {
+        Item
+    },
+}
+=======
   components: {
     Item
   },
@@ -61,6 +72,7 @@ export default {
         }
       }
 };
+>>>>>>> 099b232d4a81f28a6f931c719e48380dcbbf7dc2
 </script>
 
 <style>
