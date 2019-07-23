@@ -187,6 +187,7 @@ export default {
 
         // 确认选择日期时触发
         handleDate(value){
+            console.log(value)
            this.form.departDate =  moment(value).format("YYYY-MM-DD");
         },
 

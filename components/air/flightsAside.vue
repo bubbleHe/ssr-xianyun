@@ -25,14 +25,15 @@
 
             <!-- 历史搜索列表 -->
             <nuxt-link :to="`/air/flights?departCity=${item.departCity}&departCode=${item.departCode}&destCity=${item.destCity}&destCode=${item.destCode}&departDate=${item.departDate}`"
-            v-for="(item, index) in history"
-            :key="index">
+            >
 
                 <!-- 历史查询的展示列表 -->
                 <el-row type="flex" 
                 justify="space-between" 
                 align="middle"
-                class="history-item">
+                class="history-item"
+                v-for="(item, index) in history"
+            :key="index">
                     <div class="air-info">
                         <div class="to-from">{{ item.departCity }} - {{ item.destCity }}</div>
                         <p>{{ item.departDate}}</p>
